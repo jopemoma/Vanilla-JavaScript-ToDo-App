@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%;
+  background-color: rgb(233, 233, 172);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+h2 {
+  background-color: white;
+  border: 2px solid rgb(206, 134, 134);
+  border-radius: 20px;
+  margin: 0px;
+  width: 400px;
+  text-align: center;
+  margin-bottom: -20px;
+  z-index: 1;
+  position: relative;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(206, 134, 134);
+  padding: 3%;
+  border-radius: 20px;
+  height: 130px;
+}
+
+.form__title {
+  margin: 1%;
+  border: 2px solid black;
+  border-radius: 20px;
+  line-height: 20px;
+}
+
+.form__title:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form__description {
+  margin: 1%;
+  border: 2px solid black;
+  border-radius: 20px;
+  line-height: 20px;
+}
+
+.form__description:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form__submit {
+  margin: 1%;
+  border: 1px solid black;
+  width: 100px;
+  padding: 1%;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  margin-left: auto;
+}
+
+.form__submit:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.toDos {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.toDos__toDo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(176, 233, 176);
+  padding: 0;
+  margin: 1%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.toDos__toDo:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.toDos__toDo--done {
+  background-color: lightgrey;
+  order: 2;
+}
+
+.toDos__toDo--done div {
+  text-decoration: line-through;
+}
+
+.toDos__remove {
+  width: 0%;
+  display: none;
+  color: white;
+  background-color: tomato;
+  border-radius: 20px;
+  padding: 2px;
+  margin-top: 3px;
+  margin-bottom: -10px;
+  margin-left: auto;
+}
+
+.toDos__remove:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.toDos__toDo--show {
+  display: block;
+  width: 80px;
+}
